@@ -6,3 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "Scala-Spark-MyAnimeList"
   )
+val sparkVersion = "3.4.1"
+
+libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion
+libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
+libraryDependencies += "com.typesafe" % "config" % "1.4.2"
