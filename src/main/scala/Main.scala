@@ -1,5 +1,6 @@
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
+import sparkutils.SparkUtils
 
 object Main {
   def main(args: Array[String]): Unit = {
