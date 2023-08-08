@@ -1,7 +1,9 @@
-import org.apache.spark.sql.{DataFrame, SparkSession, functions}
+package preprocessing
+
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions.udf
 import org.apache.spark.sql.types.IntegerType
+import org.apache.spark.sql.{DataFrame, SparkSession, functions}
 
 object DataPreprocessor {
   val spark: SparkSession = SparkSession
@@ -50,4 +52,5 @@ object DataPreprocessor {
                       "\n",
                       "")))
   }
+
 }
