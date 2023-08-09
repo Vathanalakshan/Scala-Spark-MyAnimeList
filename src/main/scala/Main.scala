@@ -53,10 +53,19 @@ object Main {
       query.genderDistribution(cleanedProfileDf)
 
       println("Most popular animes are :")
-      query.mostPopularAnime(cleanedAnimeDf, 10)
+      query.mostPopularAnime(cleanedAnimeDf, 20)
 
-      println("Most Reviewed Animes are :")
-      query.mostReviewedAnimes(cleanedReviewDf, cleanedAnimeDf)
+      println("Most reviewed animes are :")
+      query.mostReviewedAnimes(cleanedReviewDf, cleanedAnimeDf, 20)
+
+      println("User with the most favourite animes")
+      query.numberOfFavouriteAnime(cleanedProfileDf, 20)
+
+      println("Most favourite anime count :")
+      query.mostFavouriteAnime(cleanedProfileDf, cleanedAnimeDf, 20)
+
+
+
     }
   }
 }
